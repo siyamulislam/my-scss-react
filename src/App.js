@@ -8,7 +8,7 @@ export const categoryContext = createContext();
 
 function App() {
   const [count,setCount]= useState(100);
-  const [category,setCategory]= useState(10);
+  const [category,setCategory]= useState('Laptop');
   return (
     <categoryContext.Provider value={[category, setCategory]}>
     <div className="App"> 

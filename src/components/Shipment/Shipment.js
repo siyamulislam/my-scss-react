@@ -8,7 +8,7 @@ const Shipment = (props) => {
         <div>
             <h3>This is ship: {count} </h3>
             <h5>This is Category: {category} </h5>
-            <button onClick={()=>setCategory(category-2)}>Set Ship</button>
+            <button onClick={()=>setCategory(category+1)}>Set Ship</button>
         </div>
     );
 };
