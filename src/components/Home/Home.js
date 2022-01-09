@@ -7,8 +7,7 @@ const Home = (props) => {
     const [category,setCategory]= useContext(categoryContext);
     return (
         <div style={ {border: '1px solid red', margin:'20px 200px'}}>
-            <h1>This is Home: {count} </h1>
-            <h1>This is Home Category: {category} </h1>
+            <p>This is Home: {count} </p>
             <Category count={count}></Category>
             <button onClick={()=>setCategory(category+1)}>SetCategory</button>
         </div>

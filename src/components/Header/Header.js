@@ -15,7 +15,7 @@ const Header = (props) => {
             <h1>This is Header:  {count}</h1>
             <h1>This is Header Category:  {category}</h1>
             <button onClick={handelCount}>Increases</button>
-            <button onClick={ ()=> setCategory(category+' Laptop')}>Laptop</button>
+            <button onClick={ ()=> setCategory('Laptop')}>Laptop</button>
             <button onClick={ ()=> setCategory('Mobile')}>Mobile</button>
             <button onClick={ ()=> setCategory('Camera')}>Camera</button> 
         </div>
