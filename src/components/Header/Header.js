@@ -7,9 +7,6 @@ const Header = (props) => {
     const handelCount=()=>{
             setCount(count+1);
     }
-    const handelCategory=()=>{
-            setCount(count+1);
-    }
     return (
         <div>
             <h1>This is Header:  {count}</h1>

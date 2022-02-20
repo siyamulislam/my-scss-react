@@ -1,9 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { categoryContext } from '../../../App';
 import CategoryDetails from '../CategoryDetails/CategoryDetails';
-
 const Category = (props) => {
-   
     const {count}= props
     const [products,setProduct]=useState([]);
     const[category]=useContext(categoryContext)
@@ -21,8 +19,7 @@ const Category = (props) => {
             <p>This is Category: {count}</p>
             {
                 products.map((pd,index)=><CategoryDetails key={index} product={pd}></CategoryDetails>)
-            }
-            
+            }  
         </div>
     );
 };
