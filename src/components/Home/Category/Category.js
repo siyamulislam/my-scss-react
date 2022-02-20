@@ -5,7 +5,7 @@ import CategoryDetails from '../CategoryDetails/CategoryDetails';
 const Category = (props) => {
    
     const {count}= props
-    const [products,setProduct]=useState('');
+    const [products,setProduct]=useState([]);
     const[category]=useContext(categoryContext)
     useEffect(()=>{
         const allProducts = [
